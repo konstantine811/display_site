@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+:root {
+  --grey-main: #e5e5e5;
+  --blue-main: #03045e;
+  --blue-main-05: rgba(3, 4, 94, 0.5);
+  --orange: #f2994a;
+  --br: 5px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.page-wrap {
+  min-height: 100vh;
+  background-color: var(--grey-main);
+  display: flex;
+  flex-direction: column;
+}
+
+/* common  */
+.container {
+  max-width: calc(1249px + (25px * 2));
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 25px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.img-responsive {
+  width: 100%;
+}
+
+.select-none {
+  user-select: none;
+}
+
+/* typography */
+.h1 {
+  font-weight: 700;
+  font-size: 48px;
+  color: var(--blue-main);
+}
+.h2 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 68px;
+  color: var(--blue-main);
+}
+
+.txt {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--blue-main-05);
+}
+
+.txt--uppercase {
+  text-transform: uppercase;
+}
+
+.txt--orange {
+  color: var(--orange);
+}
+
+.link {
+  color: var(--blue-main);
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: var(--orange);
+}
+
+/* btn */
+.btn {
+  display: inline-block;
+  background: var(--grey-main);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25), inset 1px 1px 1px #ffffff;
+  border-radius: var(--br);
+  color: var(--blue-main);
+  font-weight: 500;
+  font-size: 18px;
+  padding: 11px 35px;
+  transition: box-shadow 0.3s ease;
+}
+
+.btn--lg {
+  padding: 17px 38px;
+}
+
+.btn:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 1px 1px 1px #ffffff;
+}
+/* header */
+.header__container {
+  max-width: 1180px;
+  padding-top: 68px;
+}
+
+.header__logo-svg {
+  width: 100%;
+  max-width: 45px;
+  padding-right: 8px;
+}
+
+.header__nav-link {
+  padding-right: 40px;
+}
+
+/* main */
+.main {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  padding: 25px 0;
+}
+
+.main__content {
+  max-width: 585px;
+  width: 100%;
+}
+
+.main__title,
+.main__txt {
+  padding-bottom: 36px;
+}
